@@ -1,6 +1,6 @@
 
 FROM ubuntu:20.04
-RUN apt install curl -y && apt install gnupg2 tzdata -y
+RUN apt update -y && apt install gnupg2 tzdata -y
 RUN echo "Australia/Adelaide" |  tee /etc/timezone
 RUN apt update -y && apt install nodejs npm openjdk-8-jdk wget unzip git vim nano -y
 
