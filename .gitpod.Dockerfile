@@ -2,7 +2,7 @@ FROM gitpod/workspace-full
 
 USER root
 
-FROM ubuntu:20
+FROM ubuntu:20.04
 
 RUN apt update -y && apt install nodejs npm openjdk-8-jdk wget unzip git vim nano -y
 
